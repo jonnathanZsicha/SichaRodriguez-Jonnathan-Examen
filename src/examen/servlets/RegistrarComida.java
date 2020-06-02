@@ -33,17 +33,15 @@ public class RegistrarComida extends HttpServlet {
 		// TODO Auto-generated method stub
 		response.getWriter().append("Served at: ").append(request.getContextPath());
 		ComidaDAO comidadao = DAOFactory.getFactory().getComidaDAO();
+
 		
-		double precio1 = Double.parseDouble("20"); 
-		double precio2 = Double.parseDouble("30"); 
-		double precio3 = Double.parseDouble("40"); 
+		double precio1= Double.parseDouble(request.getParameter("precio")); 
+		
 			
-		Comida comida1 = new Comida("salchipapa",precio1 , null);
+		Comida comida1 = new Comida(request.getParameter("nombre"),precio1 , null);
 		comidadao.create(comida1);
-		Comida comida2 = new Comida("broster",precio2 , null);
-		comidadao.create(comida2);
-		Comida comida3 = new Comida("secodepollo",precio3 , null);
-		comidadao.create(comida3);
+		System.out.println("ingresado comido exitosamente");
+		
 		
 				
 	}
