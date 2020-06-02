@@ -52,7 +52,7 @@ public class RegistrarPedido extends HttpServlet {
 		System.out.println("Se ha creado exitosamente el pedido");
 		
 		
-		request.getRequestDispatcher( "/JSP/Comidas.jsp" ).forward( request, response );
+		request.getRequestDispatcher( "/JSP/listado.jsp" ).forward( request, response );
 		
 	}
 

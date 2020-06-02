@@ -44,7 +44,10 @@
                          <fieldset class="form-group">
                             <label>Observaciones</label> <input type="text" class="form-control" name="observaciones" required="required">
                         </fieldset>
-                       
+                          <label>Comida</label> <input type="text" class="form-control" name="comida" required="required">
+                        </fieldset>
+                           <label>tarjeta</label> <input type="text" class="form-control" name="tarjeta" required="required">
+                        </fieldset>
 
                         <button type="submit" class="btn btn-success">SiguienteRegistrarComidas</button>
                         </form>
