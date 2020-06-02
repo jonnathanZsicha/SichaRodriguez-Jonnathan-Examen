@@ -4,7 +4,7 @@
         <html>
 
         <head>
-            <title>Registrar Pedido</title>
+            <title>listar pedido comidas tarjeta</title>
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
         </head>
         <body>
@@ -28,10 +28,10 @@
 
                 
                        
-                         <form action="<%=request.getContextPath()%>/RegistrarPedido" method="get">
+                         <form action="<%=request.getContextPath()%>/UsuarioControler" method="get">
                         <fieldset class="form-group">
      
-                            <label>Fecha</label> <input type="text" " class="form-control" name="fecha" required="required">
+                            <label>Cedula</label> <input type="text" " class="form-control" name="cedula" required="required">
                         </fieldset>
 
                         <fieldset class="form-group">
@@ -39,14 +39,16 @@
                         </fieldset>
 
                         <fieldset class="form-group">
-                            <label>Total</label> <input type="text" class="form-control" name="total" required="required" value="0">
+                            <label>Apellido</label> <input type="text" class="form-control" name="apellido" required="required">
                         </fieldset>
                          <fieldset class="form-group">
-                            <label>Observaciones</label> <input type="text" class="form-control" name="observaciones" required="required">
+                            <label>Correo</label> <input type="text" class="form-control" name="correo" required="required">
                         </fieldset>
-                       
+                         <fieldset class="form-group">
+                            <label>Password</label> <input type="password" class="form-control" name="password" required="required">
+                        </fieldset>
 
-                        <button type="submit" class="btn btn-success">SiguienteRegistrarComidas</button>
+                        <button type="submit" class="btn btn-success">Guardar</button>
                         </form>
                     </div>
                 </div>

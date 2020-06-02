@@ -8,6 +8,7 @@ public class JPATarjetaCreditoDAO extends JPAGenericDAO<TarjetaCredito, Integer>
 	public JPATarjetaCreditoDAO() {
 		super(TarjetaCredito.class);
 		// TODO Auto-generated constructor stub
+		
 	}
 	
 
