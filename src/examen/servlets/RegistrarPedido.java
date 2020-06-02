@@ -45,6 +45,8 @@ public class RegistrarPedido extends HttpServlet {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+		String tarjeta = request.getParameter("tarjeta");
+		
 		Pedido pedido = new Pedido(fec,request.getParameter("nombre") ,tota, request.getParameter("observaciones"));
 		pedidoDAO.create(pedido);
 		System.out.println("Se ha creado exitosamente el pedido");
